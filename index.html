@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focused - Privacy Policy</title>
+
+    <style>
+        :root {
+            --primary: #7C5CFF;
+            --primary-dark: #6548E8;
+            --background: #F6F5FF;
+            --surface: #FFFFFF;
+            --text: #1A1A1A;
+            --secondary: #5B5B6A;
+            --border: #E6E3F8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Helvetica, Arial, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6F56FF 0%, #8D73FF 100%);
+            color: white;
+            padding: 72px 24px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .logo {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            background: rgba(255,255,255,.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: clamp(2.3rem,4vw,3.5rem);
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: .92;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 48px 24px 80px;
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: 18px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 6px 30px rgba(0,0,0,.04);
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+            margin-top: 6px;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            margin-top: 28px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--secondary);
+            margin-top: 40px;
+            font-size: .95rem;
+        }
+
+        .highlight {
+            background: #F1EEFF;
+            border-left: 4px solid var(--primary);
+            padding: 18px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media(max-width:700px){
+            .hero{
+                padding:56px 20px;
+            }
+
+            .card{
+                padding:24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="logo">🛡️</div>
+
+        <h1>Privacy Policy</h1>
+
+        <p class="subtitle">
+            Focused — Block Apps by Location
+        </p>
+    </div>
+</section>
+
+<div class="container">
+
+    <div class="card">
+
+        <p><strong>Last updated:</strong> July 14, 2026</p>
+
+        <br>
+
+        <p>
+            This Privacy Policy explains what information the App accesses,
+            how it is used, and where it is stored.
+        </p>
+
+        <p>
+            Focused is designed to operate entirely on your device.
+            We do not operate backend servers, require user accounts,
+            display advertisements, or collect analytics.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Information the App Accesses</h2>
+
+        <h3>Location (Foreground & Background)</h3>
+
+        <p>
+            Focused uses your device's location to detect when you enter
+            or leave the Focus Zones you create (for example, your office,
+            home, library, or gym).
+        </p>
+
+        <ul>
+            <li>Location is used only for geofence monitoring.</li>
+            <li>Zone coordinates and radius are stored locally on your device.</li>
+            <li>Background location enables automatic zone detection when the app isn't open.</li>
+            <li>Your location is never transmitted to servers operated by us.</li>
+        </ul>
+
+        <h3>Installed Applications</h3>
+
+        <p>
+            Focused accesses the list of installed applications on your device
+            so you can choose which apps to block inside your Focus Zones.
+        </p>
+
+        <p>
+            This information never leaves your device.
+        </p>
+
+        <h3>Accessibility Service</h3>
+
+        <p>
+            Focused uses Android's Accessibility Service solely to determine
+            which application is currently in the foreground in order to
+            enforce your selected app blocking rules.
+        </p>
+
+        <ul>
+            <li>Accessibility data is processed entirely on your device.</li>
+            <li>We do not read messages, passwords, typed text, or screen content.</li>
+            <li>Accessibility data is never collected, stored, or transmitted by us.</li>
+        </ul>
+
+        <h3>Notifications</h3>
+
+        <p>
+            Focused may request notification permission to notify you when
+            Focus Zones become active or when a blocked application is intercepted.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Data Storage</h2>
+
+        <p>
+            All app data, including:
+        </p>
+
+        <ul>
+            <li>Focus Zones</li>
+            <li>Blocked application lists</li>
+            <li>Preferences</li>
+        </ul>
+
+        <p>
+            is stored locally on your device using Room and Android DataStore.
+        </p>
+
+        <div class="highlight">
+            We do not operate servers that store your personal information.
+        </div>
+
+        <p>
+            If Android Backup is enabled on your device, locally stored app
+            data may be included in your personal Google account backup,
+            subject to Google's backup policies.
+        </p>
+
+        <p>
+            Uninstalling the App removes its locally stored data from your device.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Third-Party Services</h2>
+
+        <p>
+            Focused relies on the following Google services to provide
+            core functionality:
+        </p>
+
+        <ul>
+            <li>Google Play Services (Location & Geofencing)</li>
+            <li>Google Maps SDK</li>
+        </ul>
+
+        <p>
+            These services are used solely to provide mapping and geofence
+            functionality.
+        </p>
+
+        <p>
+            Google's Privacy Policy:
+            <br><br>
+            <a href="https://policies.google.com/privacy">
+                https://policies.google.com/privacy
+            </a>
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Data Sharing</h2>
+
+        <p>
+            We do not sell, rent, or share your personal information with
+            third parties.
+        </p>
+
+        <p>
+            Focused does not include advertising or analytics SDKs.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Your Choices</h2>
+
+        <ul>
+            <li>You can revoke Location permission at any time.</li>
+            <li>You can disable Accessibility permission at any time.</li>
+            <li>You can disable Notifications whenever you choose.</li>
+            <li>You can delete Focus Zones from within the App.</li>
+            <li>You can uninstall the App to remove all locally stored data.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Intended Audience</h2>
+
+        <p>
+            Focused is intended for users aged 18 years or older and is not
+            designed for children.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Changes to this Policy</h2>
+
+        <p>
+            We may update this Privacy Policy from time to time.
+            Any changes will be reflected by updating the
+            <strong>"Last updated"</strong> date at the top of this page.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Contact</h2>
+
+        <p>
+            If you have questions about this Privacy Policy,
+            please contact:
+        </p>
+
+        <p>
+            <strong>bytestackr@example.com</strong>
+        </p>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Focused. All rights reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
