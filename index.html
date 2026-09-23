@@ -202,17 +202,18 @@
   <header class="hero">
     <span class="eyebrow">Privacy Policy</span>
     <h1>Focused</h1>
-    <p class="effective-date">Effective date: August 24, 2026</p>
+    <p class="effective-date">Effective date: September 22, 2026</p>
 
     <div class="lede">
       <p>Focused ("the App", "we", "us") explains in this policy what data the App accesses, how it's used, and where it's stored.</p>
-      <p>Focused's core zone-blocking functionality runs entirely on your device — there is no developer-operated backend server for your zones, blocked-app lists, or location data, and no advertising SDKs. Focused Pro (an optional paid subscription) and optional Google Sign-In do involve third-party services, described below.</p>
+      <p>Focused's core zone-blocking functionality runs entirely on your device — there is no developer-operated backend server for your zones, blocked-app lists, or location data, and no advertising SDKs. Focused Pro (an optional paid subscription), optional Google Sign-In, anonymous product-usage analytics, and crash reporting do involve third-party services, described below.</p>
     </div>
 
     <nav class="toc">
       <div class="toc-title">On this page</div>
       <ol>
         <li><a href="#access">Information the App accesses</a></li>
+        <li><a href="#analytics">Analytics and crash reporting</a></li>
         <li><a href="#storage">Where your data is stored</a></li>
         <li><a href="#third-party">Third-party services</a></li>
         <li><a href="#sharing">Data sharing and sale</a></li>
@@ -270,6 +271,26 @@
     </ul>
   </section>
 
+  <section id="analytics">
+    <h2>Analytics and Crash Reporting</h2>
+
+    <h3>Product analytics (PostHog)</h3>
+    <p>Focused uses <strong>PostHog</strong> to understand how the App is used — for example, which onboarding steps people complete, how zones get created, and whether the Focused Pro paywall is shown or dismissed.</p>
+    <ul>
+      <li>Events are anonymous: they consist of an event name (e.g. "zone created") and non-identifying properties like counts, whether it's your first zone, or a permission type — never your zone names, coordinates, blocked-app list, or account details.</li>
+      <li>Each device is associated with a randomly generated analytics ID, not your name, email, or Google account.</li>
+      <li>PostHog may also collect standard technical data such as app version, OS version, and IP address to operate its service, per <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's Privacy Policy</a>.</li>
+    </ul>
+
+    <h3>Crash reporting (Firebase Crashlytics)</h3>
+    <p>Focused uses <strong>Firebase Crashlytics</strong> to receive crash and error reports so we can fix bugs.</p>
+    <ul>
+      <li>When the App crashes or hits certain errors, Crashlytics sends a report containing the stack trace, device model, OS version, and app version to Firebase.</li>
+      <li>Crash reports are not linked to your zone data, blocked-app list, or account identity.</li>
+      <li>This is subject to <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's Privacy and Security policy</a>.</li>
+    </ul>
+  </section>
+
   <section id="storage">
     <h2>Where Your Data Is Stored</h2>
     <p>Zone, blocked-app list, session, and preference data is stored locally on your device using Room (local database) and DataStore (local preferences). None of it is sent to a server operated by us, because Focused doesn't have one for this data.</p>
@@ -287,13 +308,15 @@
       <li><strong>Google Sign-In / Credential Manager</strong> — used only if you choose to sign in, to authenticate your Google identity.</li>
       <li><strong>Google Play Billing</strong> — used to process Focused Pro purchases and subscriptions.</li>
       <li><strong>RevenueCat</strong> — used to manage and validate Focused Pro subscription status across devices. See <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</li>
+      <li><strong>PostHog</strong> — used for anonymous product-usage analytics. See <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's Privacy Policy</a>.</li>
+      <li><strong>Firebase Crashlytics</strong> — used for crash and error reporting. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's Privacy and Security policy</a>.</li>
     </ul>
     <p>These services are subject to their own respective privacy policies, including <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. Their use is limited to the purposes described in this policy; we do not use them to serve ads or build advertising profiles.</p>
   </section>
 
   <section id="sharing">
     <h2>Data Sharing and Sale</h2>
-    <p>We do not sell, rent, or share your personal data with third parties for advertising purposes. We do not use advertising SDKs. Data described above is shared only with the service providers (Google, RevenueCat) necessary to provide sign-in, purchases, and subscription management.</p>
+    <p>We do not sell, rent, or share your personal data with third parties for advertising purposes. We do not use advertising SDKs. Data described above is shared only with the service providers (Google, RevenueCat, PostHog, Firebase Crashlytics) necessary to provide sign-in, purchases, subscription management, product analytics, and crash reporting.</p>
   </section>
 
   <section id="choices">
@@ -322,7 +345,7 @@
   </section>
 
   <footer>
-    Focused — a location-based app blocker.
+    Focused — a location-based app blocker. See also the <a href="https://malirauf.github.io/focused-tos/">Terms of Service</a>.
   </footer>
 
 </div>
